@@ -1,9 +1,13 @@
 .promo
 	min-height: 650px
+	width: 100vw
 	padding: 21px 0 93px 0
-	background: url('../img/BG_header.jpg')	center center/cover no-repeat
+	background: url('../img/BG_header.jpg')	center (center/cover) no-repeat
 	
 	&__main
+		display: flex
+		flex-direction: column
+		align-items: flex-end
 	.promo__textblock
 		display: flex
 		flex-direction: column
@@ -26,22 +30,33 @@
 	.promo__iconsblock
 		display: flex
 		width: 424px
-		height: 96px
 		margin-top: 66px
+		justify-content: flex-end
 		&_item
 			display: flex
 			flex-direction: column
-			align-items: center	
+			align-items: center
+			margin-left: 100px
 			&_icon
 				width: 42px
 				height: 46px
 			&_text
-				display: block
+				text-align: center
 				font-family: MuseoSansCyrl
 				font-weight: 500
   				font-size: 14px
 				color: #ffffff
 				margin-top: 20px
+	.promo__link
+		margin-top: 18px
+		color: #ffffff
+		font-family: MuseoSansCyrl
+		font-size: 16px
+		font-weight: 500
+		a
+			text-decoration: underline
+			color: #ffffff
+			text-transform: uppercase
 
 				
 
